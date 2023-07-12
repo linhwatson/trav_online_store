@@ -1,0 +1,24 @@
+/* Dropdown Menu */
+
+.dropdown-content {
+  max-width: 13em;
+  margin: 80px auto 0;
+  position: relative;
+  width: 100%;
+}
+
+#dropdown {
+  position: absolute;
+  top: 3.2em;
+  width: 100%;
+  /* visibility: hidden; */
+  /*   overflow: hidden; */
+  transform: translateY(-1em);
+  transition: transform ease 0.3s;
+  background: #ffffff;
+  border-radius: 0.5em;
+}
+
+.dropdown-content option:hover {
+  background: #1d1f24;
+}
