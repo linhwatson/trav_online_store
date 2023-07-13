@@ -9,3 +9,17 @@ mongoose.connection.on('open', () => {
 mongoose.connection.on('error', (err) => {
   console.log('MongoDB Connection Error', err);
 });
+
+const itemSchema = new mongoose.Schema({
+  unit_id: Number,
+  product_name: String,
+  popularity: String,
+  price: String,
+  durability: String,
+  dateuntilexpiration: String,
+  barcode: String,
+});
+
+const Item = new mongoose.model('Item', itemSchema);
+
+module.exports = { Item };
