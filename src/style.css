@@ -1,14 +1,16 @@
 /* Dropdown Menu */
 
 .dropdown-content {
-  max-width: 13em;
-  margin: 80px auto 0;
+  max-width: 10em;
+  margin: 80px auto 100px;
   position: relative;
   width: 100%;
+  text-align: center;
 }
 
 #dropdown {
   position: absolute;
+  display: flex;
   top: 3.2em;
   width: 100%;
   /* visibility: hidden; */
@@ -17,6 +19,7 @@
   transition: transform ease 0.3s;
   background: #ffffff;
   border-radius: 0.5em;
+  text-align: center;
 }
 
 .dropdown-content option:hover {
