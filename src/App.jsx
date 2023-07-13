@@ -9,7 +9,6 @@ const App = () => {
 
   // using dummy data
   const [items, setItems] = useState(mockData);
-  console.log('my data: ', items);
 
   return (
     <BrowserRouter>
