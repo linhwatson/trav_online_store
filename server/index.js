@@ -22,5 +22,5 @@ app.use(express.static('build'));
 // app.use('/', (req, res) => res.send('Server is running!'));
 
 app.get('/', (req, res) => res.send('Server running'))
-app.get('/details', getItems);
+app.get('/details/:name', getItems);
 app.get('/details/:id', getItem);

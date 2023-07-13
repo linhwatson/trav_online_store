@@ -1,12 +1,13 @@
 const { Item } = require("./db");
 
 exports.getItems = (req, res) => {
-  Item.find()
+  const product_name = req.params.name;
+  Item.find({ product_name })
     .then((data) => {
       res.status(200).send(data);
     })
     .catch((err) => {
-      res.status(501).send({ alert: "Error getting all items" }, err);
+      res.status(501).send({ alert: `Error getting all items from same category ${product_name}` }, err);
     });
 };
 
