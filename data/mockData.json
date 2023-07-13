@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "item": "Horizon Organic Whole Milk, 1 Gallon",
+    "name": "Horizon Organic Whole Milk, 1 Gallon",
     "category": "Dairy",
     "description": "Grade A. Vitamin D added. Pasteurized. 150 calories per cup. USDA organic.",
     "price": "5.49",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "item": "American Cheese Slices",
+    "name": "American Cheese Slices",
     "category": "Dairy",
     "description": "Add some delicious, melty delight to your next burger, sandwich or grilled cheese with American Cheese Slices from Schwan's Home Delivery.",
     "price": "6.49",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "item": "USDA Choice Angus Beef Ribeye Steak - 0.45-1.35 lbs - price per lb - Good & Gather",
+    "name": "USDA Choice Angus Beef Ribeye Steak - 0.45-1.35 lbs - price per lb - Good & Gather",
     "category": "Meat",
     "description": "Perfect for dinner parties or family gatherings, this premium Angus beef comes without the bones so you can cut right in and enjoy. It's 100% all natural with no artificial ingredients and minimal processing so you can enjoy the pure steak flavor.",
     "price": "20.24",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "item": "St. Louis-Style Pork Spareribs - 3.29-4.29 lbs - price per lb - Good & Gather",
+    "name": "St. Louis-Style Pork Spareribs - 3.29-4.29 lbs - price per lb - Good & Gather",
     "category": "Meat",
     "description": "These all-natural pork spare ribs are trimmed St. Louis style for a pleasing texture and better browning ability when tossed on your grill, and they're minimally processed with no artificial ingredients.",
     "price": "21.41",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "item": "Bunched Broccoli",
+    "name": "Bunched Broccoli",
     "category": "Vegetables",
     "description": "There are many who believe that Broccoli is the world's greatest vegetable. It's hard not to love a vegetable that's aesthetically attractive.",
     "price": "6.99",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "item": "Red Leaf Lettuce, 1 Bunch",
+    "name": "Red Leaf Lettuce, 1 Bunch",
     "category": "Vegetables",
     "description": "Produces a firm head of lettuce perfect for salads, popular salad green that is known for its crisp texture and mild flavor.",
     "price": "3.99",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "item": "Organic Strawberries, 2LBs",
+    "name": "Organic Strawberries, 2LBs",
     "category": "Fruits",
     "description": "The sweet, juicy flavor of Fresh Strawberries make them a refreshing and delicious treat. Enjoy them for breakfast, lunch, dinner, or dessert.",
     "price": "8.49",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "item": "Fresh Cherries",
+    "name": "Fresh Cherries",
     "category": "Fruits",
     "description": "Enjoy our deliciously sweet red cherries grown in Washington. Full of nutrition and Delicious.",
     "price": "5.79",
