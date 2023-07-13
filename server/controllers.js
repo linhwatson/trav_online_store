@@ -1,5 +1,15 @@
 const { Item } = require("./db");
 
+exports.getAll = (req, res) => {
+  Item.find()
+    .then((data) => {
+      res.status(200).send(data);
+    })
+    .catch((err) => {
+      res.status(501).send({ alert: 'Error getting all items' }, err);
+    });
+};
+
 exports.getItems = (req, res) => {
   const product_name = req.params.name;
   Item.find({ product_name })
