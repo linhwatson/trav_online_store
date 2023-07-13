@@ -14,7 +14,7 @@ const ItemsList = ({ items }) => {
             price={item.price}
             popularity={item.popularity}
             durability={item.durability}
-            dateuntilexpirationdate={item.dateuntilexpirationdate}
+            daysuntilexpiration={item.daysuntilexpiration}
             barcode={item.barcode}
           />
         ))

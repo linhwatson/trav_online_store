@@ -16,7 +16,7 @@ const itemSchema = new mongoose.Schema({
   popularity: String,
   price: String,
   durability: String,
-  dateuntilexpiration: String,
+  daysuntilexpiration: String,
   barcode: String,
 });
 
