@@ -1,13 +1,9 @@
 import { useState } from "react";
 import ItemsList from "./ItemsList";
-import mockData from '../../data/mockData.json';
 
-const DropDown = () => {
+const DropDown = ({ items }) => {
   const categories = ["Dairy", "Meat", "Vegetables", "Fruits"];
   const [category, setCategory] = useState("");
-
-  // using dummy data
-  const [items, setItems] = useState(mockData);
 
   return (
     <section>
