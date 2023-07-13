@@ -1,12 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const csvToJson = require('csvtojson');
-
-// const csvFile = require('../product_list.csv');
-// const json = csvToJson().fromFile(csvFile);
-// console.log(json);
-// const jsonString = JSON.stringify(json, null, 2)
-// console.log(jsonString);
 
 const app = express();
 // App PORT set with production check
