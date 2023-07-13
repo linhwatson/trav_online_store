@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useQuery } from '@tanstack/react-query';
 import ItemsList from "./ItemsList";
+import FetchAll from "./FetchAll";
 
 const DropDown = ({ items }) => {
   const categories = ["Dairy", "Meat", "Vegetables", "Fruits"];
   const [category, setCategory] = useState("");
+
+  const results = useQuery(['search'], FetchAll);
+  console.log('my results: ', results);
 
   return (
     <section>

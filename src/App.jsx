@@ -16,7 +16,6 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-
   // const [items, setItems] = useState(mockData);
 
   return (
