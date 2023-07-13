@@ -26,3 +26,5 @@ const App = () => {
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(<App />);
+
+// product_name, timestamp, unit_id, popularity, price, dateuntilexpirationdate, barcode
