@@ -1,10 +1,13 @@
 import { useState } from "react";
 import ItemsList from "./ItemsList";
+import mockData from '../../data/mockData.json';
 
 const DropDown = () => {
   const categories = ["Dairy", "Meat", "Vegetables", "Fruits"];
   const [category, setCategory] = useState("");
-  const [items, setItems] = useState([]);
+
+  // using dummy data
+  const [items, setItems] = useState(mockData);
 
   return (
     <section>
@@ -26,7 +29,7 @@ const DropDown = () => {
           </label>
         </form>
       </div>
-      <ItemsList />
+      <ItemsList items={items}/>
     </section>
   );
 };
