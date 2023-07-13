@@ -6,6 +6,11 @@ const app = express();
 // App PORT set with production check
 const PORT = process.env.PORT || 3000;
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
+
 // Listen
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

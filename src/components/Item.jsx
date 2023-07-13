@@ -5,7 +5,7 @@ const Item = ( {unit_id, product_name, price, popularity, durability, daysuntile
   const img = '';
 
   return (
-    <Link to={`/details/${id}`} className='item'>
+    <Link to={`/details/${unit_id}`} className='item'>
       <div className='image-container'>
         <img src={img} alt={name}/>
       </div>

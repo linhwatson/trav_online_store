@@ -3,11 +3,14 @@ import { useQuery } from '@tanstack/react-query';
 import ItemsList from "./ItemsList";
 import FetchAll from "./FetchAll";
 
-const DropDown = ({ items }) => {
-  const categories = ["Dairy", "Meat", "Vegetables", "Fruits"];
-  const [category, setCategory] = useState("");
+const DropDown = () => {
+  const categories = ['pepsi', 'yogurt', 'cheese', 'salad', 'fish', 'beef'];
 
-  const results = useQuery(['search'], FetchAll);
+  const [category, setCategory] = useState("");
+  // const [categories, setCategories] = useState([]);
+
+  const results = useQuery(['all', category], FetchAll);
+  const items = results?.data ?? [];
   console.log('my results: ', results);
 
   return (
@@ -19,7 +22,10 @@ const DropDown = ({ items }) => {
             <select
               id="dropdown"
               value={category}
-              onChange={(e) => setCategory(e.target.value)}
+              onChange={(e) => {
+                e.preventDefault();
+                setCategory(e.target.value)
+              }}
             >
               {categories.map((category) => (
                 <option key={category}>
