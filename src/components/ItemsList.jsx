@@ -8,13 +8,14 @@ const ItemsList = ({ items }) => {
       ) : (
         items.map((item) => (
           <Item
-            key={item.id}
-            id={item.id}
-            name={item.name}
-            category={item.category}
-            description={item.description}
+            key={item.unit_id}
+            unit_id={item.unit_id}
+            product_name={item.product_name}
             price={item.price}
-            image={item.image}
+            popularity={item.popularity}
+            durability={item.durability}
+            dateuntilexpirationdate={item.dateuntilexpirationdate}
+            barcode={item.barcode}
           />
         ))
       )}
