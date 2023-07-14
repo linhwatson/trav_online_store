@@ -1,3 +1,17 @@
+/* ============= General ======================== */
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #F5F5F7;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
 /* =========== Dropdown Menu ==================== */
 
 .dropdown-content {
