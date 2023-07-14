@@ -43,10 +43,10 @@ const Details = () => {
           <p>Barcode: {item.barcode}</p>
         </h3>
       </div>
-      <button>
+      <button className='buttons'>
         Add to Cart
       </button>
-      <button
+      <button className='buttons'
         onClick={() => navigate('/')}
       >
         Keep Shopping

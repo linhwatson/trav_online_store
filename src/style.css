@@ -1,4 +1,4 @@
-/* Dropdown Menu */
+/* =========== Dropdown Menu ==================== */
 
 .dropdown-content {
   max-width: 10em;
@@ -13,8 +13,6 @@
   display: flex;
   top: 3.2em;
   width: 100%;
-  /* visibility: hidden; */
-  /*   overflow: hidden; */
   transform: translateY(-1em);
   transition: transform ease 0.3s;
   background: #ffffff;
@@ -88,4 +86,55 @@
 
 .mini .loader {
   font-size: 34px;
+}
+
+/* ==================== Buttons ====================== */
+.buttons {
+  background-color: transparent;
+  margin-top: 20px;
+  border: 1px solid #b69c26;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttons:hover,
+.buttons:active {
+  outline: 0;
+}
+
+.buttons:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buttons:before {
+  background-color: #f6e7d5;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.buttons:hover:before {
+  background-color: #f7b054;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    padding: 16px 32px;
+  }
 }
