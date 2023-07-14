@@ -4,7 +4,12 @@ const ItemsList = ({ items }) => {
   return (
     <div>
       {!items.length ? (
-        <h1>No Food Items Found!</h1>
+        <div>
+          <h1>Page Still Loading Items!</h1>
+          <div className='loading-pane'>
+            <h2 className='loader'>🦔</h2>
+          </div>
+        </div>
       ) : (
         items.map((item) => (
           <Item
