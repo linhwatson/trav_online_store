@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import FetchItem from './FetchItem';
 import Item from './Item';
+import { imgList } from './ImgList';
 
 const Details = () => {
   const navigate = useNavigate();
@@ -18,20 +19,30 @@ const Details = () => {
   }
 
   const item = result?.data;
+  let img = '';
+
+  for (let key in imgList) {
+    if (item.product_name === key) {
+      img = imgList[key][(Math.floor(Math.random() * imgList[key].length))];
+      console.log('image: ', img)
+    }
+  }
 
   return (
-    <div>
+    <div className='item details'>
       <div className='image-container'>
-        <img src={item.img} alt={item.product_name}/>
+        <img src={img} alt={item.product_name}/>
       </div>
-      <h1>{item.product_name}</h1>
-      <h2>${item.price}</h2>
-      <h3>
-        <p>Popularity: {item.popularity}</p>
-        <p>Durability: {item.durability}</p>
-        <p>Days Until Expiration: {item.daysuntilexpiration}</p>
-        <p>Barcode: {item.barcode}</p>
-      </h3>
+      <div className='info'>
+        <h1>{item.product_name}</h1>
+        <h2>${item.price}</h2>
+        <h3>
+          <p>Popularity: {item.popularity}</p>
+          <p>Durability: {item.durability}</p>
+          <p>Days Until Expiration: {item.daysuntilexpiration}</p>
+          <p>Barcode: {item.barcode}</p>
+        </h3>
+      </div>
       <button>
         Add to Cart
       </button>

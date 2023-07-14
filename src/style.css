@@ -41,6 +41,10 @@
   min-height: 100px;
 }
 
+.details {
+  height: 300px;
+}
+
 .info {
   float: left;
   width: 80%;
