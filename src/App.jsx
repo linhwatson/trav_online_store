@@ -20,7 +20,7 @@ const App = () => {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <header>
-          <Link to='/'>Online Store</Link>
+          <Link to='/'>DLDP Store</Link>
         </header>
         <Routes>
           <Route path='/' element={<DropDown />} />

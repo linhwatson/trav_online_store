@@ -4,7 +4,7 @@ import ItemsList from "./ItemsList";
 import FetchAll from "./FetchAll";
 
 const DropDown = () => {
-  const categories = ['pepsi', 'yogurt', 'cheese', 'salad', 'fish', 'beef', 'strawberry', 'chicken'];
+  const categories = ['pepsi', 'yogurt ', 'cheese', 'salad ', 'fish', 'beef', 'strawberry', 'chicken'];
   const [category, setCategory] = useState("");
 
   const results = useQuery(['all', category], FetchAll);
@@ -15,7 +15,7 @@ const DropDown = () => {
       <div className="dropdown-content">
         <form>
           <label htmlFor="category">
-            Category
+            Choose a Category!
             <select
               id="dropdown"
               value={category}
@@ -24,6 +24,7 @@ const DropDown = () => {
                 setCategory(e.target.value)
               }}
             >
+              <option>--</option>
               {categories.map((category) => (
                 <option key={category}>
                   {category}
