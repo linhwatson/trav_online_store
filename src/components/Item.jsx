@@ -14,7 +14,7 @@ const Item = ( {unit_id, product_name, price, popularity, durability, daysuntile
   return (
     <Link to={`/details/${unit_id}`} className='item'>
       <div className='image-container'>
-        <img src={img} alt={name}/>
+        <img src={img} alt={product_name}/>
       </div>
       <div className='info'>
         <h1>{product_name}</h1>
