@@ -28,6 +28,6 @@ exports.getItem = (req, res) => {
     res.status(200).send(data)
   })
   .catch((err) => {
-    res.status(501).send({ alert:`Error getting item with id ${id}` }, err);
+    res.status(501).send({ alert:`Error getting item with id ${unit_id}` }, err);
   });
 };

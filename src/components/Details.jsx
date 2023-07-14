@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import FetchItem from './FetchItem';
+import Item from './Item';
 
 const Details = () => {
   const navigate = useNavigate();
@@ -20,6 +21,9 @@ const Details = () => {
 
   return (
     <div>
+      <div className='image-container'>
+        <img src={item.img} alt={item.product_name}/>
+      </div>
       <h1>{item.product_name}</h1>
       <h2>${item.price}</h2>
       <h3>
