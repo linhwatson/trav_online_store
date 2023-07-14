@@ -4,14 +4,11 @@ import ItemsList from "./ItemsList";
 import FetchAll from "./FetchAll";
 
 const DropDown = () => {
-  const categories = ['pepsi', 'yogurt', 'cheese', 'salad', 'fish', 'beef'];
-
+  const categories = ['pepsi', 'yogurt', 'cheese', 'salad', 'fish', 'beef', 'strawberry', 'chicken'];
   const [category, setCategory] = useState("");
-  // const [categories, setCategories] = useState([]);
 
   const results = useQuery(['all', category], FetchAll);
   const items = results?.data ?? [];
-  console.log('my results: ', results);
 
   return (
     <section>

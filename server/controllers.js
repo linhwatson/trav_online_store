@@ -12,11 +12,9 @@ exports.getAll = (req, res) => {
 
 exports.getItems = (req, res) => {
   const product_name = req.params.name;
-  console.log('I am in getItems')
   Item.find({ product_name })
     .then((data) => {
       res.status(200).send(data);
-      console.log('my data: ', data)
     })
     .catch((err) => {
       res.status(501).send({ alert: `Error getting all items from same category ${product_name}` }, err);

@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Details from "./components/Details";
 import DropDown from "./components/DropDown";
-// import mockData from '../data/mockData.json';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -16,7 +15,6 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  // const [items, setItems] = useState(mockData);
 
   return (
     <BrowserRouter>
@@ -25,7 +23,6 @@ const App = () => {
           <Link to='/'>Online Store</Link>
         </header>
         <Routes>
-          {/* <Route path='/' element={<DropDown items={items} />} /> */}
           <Route path='/' element={<DropDown />} />
           <Route path='/details/:id' element={<Details />} />
         </Routes>
