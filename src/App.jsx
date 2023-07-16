@@ -22,7 +22,7 @@ const App = () => {
         <header>
           <img className='thumbnail' src='https://www.shysha.in/wp-content/uploads/2021/08/o1.jpg' alt='thumbnail' ></img>
           <Link
-            style={{ textDecoration: 'none', fontSize: '2.5em', padding: '820px' }}
+            style={{ textDecoration: 'none', fontSize: '2.5em', fontFamily: "Lucida Handwriting", padding: '800px' }}
             to='/'
           >
             🍄 DLDP Store

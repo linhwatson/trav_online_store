@@ -29,7 +29,9 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
-  font-family: 'Orbitron', sans-serif
+  font-family: "Papyrus";
+  font-size: 1.2em;
+  font-weight: 800;
 }
 
 #dropdown {
@@ -39,14 +41,18 @@ body {
   width: 100%;
   transform: translateY(-1em);
   transition: transform ease 0.3s;
-  background: #f6e7d5;
+  background: #fdf7f0;
   border-radius: 0.5em;
+  border-color: #858585;
   text-align: center;
+  font-family: "Monaco";
+  font-size: medium;
+  font-weight: 500;
 }
 
-.dropdown-content option:hover {
+/* .dropdown-content option:hover {
   background: #fa9919;
-}
+} */
 
 /* Item */
 .item {
