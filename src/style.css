@@ -11,6 +11,15 @@ body {
   margin: 0 auto;
 }
 
+/* ============= Thumbnail ====================== */
+.thumbnail {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
 
 /* =========== Dropdown Menu ==================== */
 

@@ -20,7 +20,13 @@ const App = () => {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <header>
-          <Link style={{ textDecoration: 'none', fontSize: '2em', padding: '850px' }} to='/'>🍄 DLDP Store</Link>
+          <img className='thumbnail' src='https://www.shysha.in/wp-content/uploads/2021/08/o1.jpg' alt='thumbnail' ></img>
+          <Link
+            style={{ textDecoration: 'none', fontSize: '2.5em', padding: '820px' }}
+            to='/'
+          >
+            🍄 DLDP Store
+          </Link>
         </header>
         <Routes>
           <Route path='/' element={<DropDown />} />
