@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
 import { useQuery } from '@tanstack/react-query';
 import FetchItem from './FetchItem';
 import Item from './Item';
@@ -6,6 +7,7 @@ import { imgList } from './ImgList';
 
 const Details = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const { id } = useParams();
   const result = useQuery(['details', id], FetchItem);
@@ -24,8 +26,15 @@ const Details = () => {
   for (let key in imgList) {
     if (item.product_name === key) {
       img = imgList[key][(Math.floor(Math.random() * imgList[key].length))];
-      console.log('image: ', img)
     }
+  }
+
+  const addToCart = (item) => {
+
+    dispatch({
+      type: 'ADD_TO_CART',
+      payload: item
+    });
   }
 
   return (
@@ -43,10 +52,14 @@ const Details = () => {
           <p>Barcode: {item.barcode}</p>
         </h3>
       </div>
-      <button className='buttons'>
+      <button
+        className='buttons'
+        onClick={() => addToCart(item)}
+      >
         Add to Cart
       </button>
-      <button className='buttons'
+      <button
+        className='buttons'
         onClick={() => navigate('/')}
       >
         Keep Shopping
