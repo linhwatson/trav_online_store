@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Details from "./components/Details";
 import DropDown from "./components/DropDown";
 import Cart from "./components/Cart";
-// import Payment from "./components/Payment";
+import Payment from "./components/Payment";
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
 import cartListReducer from "./redux/reducers/cartListReducer.js";
@@ -44,7 +44,7 @@ const App = () => {
             <Route path='/' element={<DropDown />} />
             <Route path='/details/:id' element={<Details />} />
             <Route path="/cart" element={<Cart />} />
-            {/* <Route path="/payment" element={<Payment />} /> */}
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </QueryClientProvider>
       </BrowserRouter>
