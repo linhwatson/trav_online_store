@@ -7,10 +7,10 @@ const Cart = () => {
   const navigate = useNavigate();
   const cartList = useSelector((store) => store.cartListReducer);
 
-  useEffect(() => {
-    console.log('cartList', cartList);
-    //run script for Predictive Model
-  }, []);
+  // useEffect(() => {
+  //   console.log('cartList', cartList);
+  //   //run script for Predictive Model
+  // }, []);
 
   return (
     <div>

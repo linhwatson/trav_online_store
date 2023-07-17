@@ -54,7 +54,10 @@ const Details = () => {
       </div>
       <button
         className='buttons'
-        onClick={() => addToCart(item)}
+        onClick={() => {
+          addToCart(item);
+          navigate('/cart')
+        }}
       >
         Add to Cart
       </button>
