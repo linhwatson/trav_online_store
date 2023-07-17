@@ -22,6 +22,7 @@ const Payment = () => {
        type: "CLEAR_CART",
      });
      navigate("/");
+     alert('Thank you for shopping with us!')
   };
 
   return (
