@@ -1,2 +1,2 @@
-# trav_online_store
-Travelers Online Store Group Project
+ # trav_online_store
+Online Store Group Project
